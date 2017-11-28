@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>RECUÉRDAME</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="css/bootstrap/jquery-3.2.1.min.js" ></script>
+        <script src="css/bootstrap/js/bootstrap.min.js"></script>
+        <link href="css/bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
+        <script src="js/MyScript.js"></script>
+    </head>
+    <body style="background:url(images/fondo.jpg)">
+        <div class="container">
+            <header class="text-center page-header">
+                <h1>RECUÉRDAME</h1>
+            </header>
+            <br>
+            <div class="row panel-body">
+                
+                <div class="thumbnail col-lg-3" style="background: transparent">
+                    <img src="images/Personajes/gifYugi.gif"> 
+                </div>
+                
+                <form class="col-lg-6 text-center thumbnail form-group" style="background: transparent">
+                    
+                    <br>
+                    <h3>Jugador</h3>
+                    <br>
+                    
+                    <label>Nombre: </label>
+                    <input type="text" placeholder="Anonimo" autofocus required>
+                    <br><br>
+
+                    <label>Genero:</label><br>
+                    <span class="glyphicon glyphicon-user"> Maculino</span>
+                    <input type="radio" name="genero" value="masculino" onclick="modoJuego()" checked>
+                    <br>
+                    <span class="glyphicon glyphicon-heart"> Femenino</span>
+                    <input type="radio" name="genero" value="femenino" onclick="modoJuego()">
+                    <br><br>
+                    
+                    <label>Dificultad:</label>
+                    <select onchange="modoJuego()" id="dificultad" name="dificultal" >
+                        <option value="facil">Facil</option>
+                        <option value="medio">Medio</option>
+                        <option value="dificil">Dificil</option>
+                    </select>
+                    <br><br>
+
+                    <input type="submit" value="Jugar" class="btn btn-success">
+
+                    <input type="button" value="Puntajes" class="btn btn-info">
+                    <br>
+                </form>
+            
+                <div class="thumbnail col-lg-3" style="background: transparent">
+                    <img src="images/Personajes/Joey.png" id="modo" style="height:25vw">
+                </div>
+                
+            </div>
+        </div>
+    </body>
+</html>
